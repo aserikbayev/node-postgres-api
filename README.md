@@ -2,15 +2,18 @@
 ## What is it?
 Repo for API for fictional restaurant "Miruna" written using Node.js express and PostgreSQL
 
+## Models
+![Entity-Relationship Diagram](img/ERD.png "Entity-Relationship Diagram")
+
 ## Setting up
 #### Deploy database
 
 1. Create database DATABASE_NAME
 2. Create tables, constraints and insert initial records using following command:
 
-`psql -d DATABASE_NAME -f create_tables.sql`
+`psql -d DATABASE_NAME -f db/create_tables.sql`
 
-same with add_constraints.sql, insert_records.sql and auth.sql
+repeat for other files in db/
 
 #### Configs
 
@@ -21,9 +24,8 @@ same with add_constraints.sql, insert_records.sql and auth.sql
 `npm install`
 
 #### Run server
-Run `npm start` from / directory
+Execute `npm start` from / directory
 
-Or
-`npm test` to start server with nodemon
+Or `npm test` to start the server with nodemon
 
-> Check out description of routes on / path, or source code instead
+> Check out the description of routes on / path, or source code instead
